@@ -14,7 +14,7 @@
 # -- Project information -----------------------------------------------------
 
 # FIXME: choose title
-project = "Your lesson name"
+project = "Hackathons"
 # FIXME: insert correct author
 author = "The contributors"
 copyright = f"2026, Mimer AI Factory, {author}"

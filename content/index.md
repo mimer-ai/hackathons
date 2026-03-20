@@ -1,26 +1,14 @@
-# LESSON NAME
+# Hackathons by Mimer AIF
 
 Intro
 
-:::{prereq}
 
-- FIXME
-- ...
-- ...
-  :::
-
-```{csv-table}
-:delim: ;
-:widths: auto
-
-20 min ; {doc}`filename`
-```
 
 ```{toctree}
-:caption: The lesson
-:maxdepth: 1
+:caption: List of hackathons
+:maxdepth: 2
 
-episode.md
+2026-03-stockholm-ai/index.md
 ```
 
 ```{toctree}
@@ -30,17 +18,6 @@ episode.md
 quick-reference
 guide
 ```
-
-## Learning outcomes
-
-FIXME
-
-This material is for ...
-
-By the end of this module, learners should:
-
-- ...
-- ...
 
 ## See also
 

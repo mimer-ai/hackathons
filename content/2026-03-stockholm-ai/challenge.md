@@ -1,4 +1,4 @@
-# Episode template
+# Challenge
 
 :::{questions}
 - What syntax is used to make a lesson?
