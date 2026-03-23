@@ -24,9 +24,14 @@ You are of course free to use your favourite coding agent/IDE of choice.
 
 ```
 
+## Instructions
+
 
 ```{toctree}
+:maxdepth: 2
+
 setup
+setup-fallback
 intro
 challenge-1
 ```
