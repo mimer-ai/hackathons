@@ -34,4 +34,5 @@ setup
 setup-fallback
 intro
 challenge-1
+challenge-2
 ```
