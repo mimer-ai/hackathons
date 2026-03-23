@@ -52,6 +52,11 @@ Fine-tuning, on the other hand, involves training a pre-trained model on a speci
 
 Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows. They allow agents to load procedural knowledge and context on demand, enabling them to perform tasks more accurately and efficiently. Skills are defined in a `SKILL.md` file and can include instructions, scripts, and resources.
 
+:::{seealso}
+- [What are skills? - Agent Skills](https://agentskills.io/what-are-skills)
+- [Simon Willison's blog on skills](https://simonwillison.net/tags/skills/)
+:::
+
 
 ## Summary
 
