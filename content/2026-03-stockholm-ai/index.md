@@ -2,9 +2,9 @@
 
 :::{prereq}
 
-- FIXME
-- ...
-- ...
+- You are registered with the event
+- No have dabbled with coding agents or are curious about it
+
 :::
 
 The task will be to create "research agents" using Mimer and open weight models that can answer questions using Sweden's public data (from SCB and Riksbanken).
