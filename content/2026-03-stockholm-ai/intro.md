@@ -1,4 +1,4 @@
-# Challenge
+# Introduction
 
 :::{questions}
 - What syntax is used to make a lesson?

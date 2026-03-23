@@ -27,5 +27,6 @@ You are of course free to use your favourite coding agent/IDE of choice.
 
 ```{toctree}
 setup
-challenge
+intro
+challenge-1
 ```
