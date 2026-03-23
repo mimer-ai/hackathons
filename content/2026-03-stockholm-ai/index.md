@@ -7,7 +7,7 @@
 - ...
 :::
 
-The task will be to create "research agents" using Mimer and open weight models that can answer questions using Sweden's public data (e.g. SCB).
+The task will be to create "research agents" using Mimer and open weight models that can answer questions using Sweden's public data (from SCB and Riksbanken).
 You are of course free to use your favourite coding agent/IDE of choice.
 
 ## Schedule
@@ -35,4 +35,5 @@ setup-fallback
 intro
 challenge-1
 challenge-2
+challenge-3
 ```
