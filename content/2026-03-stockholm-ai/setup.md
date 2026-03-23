@@ -1,5 +1,15 @@
 # Setup
 
+## Endpoints
+
+While we provide instructions below for several tools, here are the information you need if you want to skip them.
+
+- Endpoint for the model:  <http://mimer-aif-hackathon.icedc.se/v1>
+- Endpoint for Riksbanken MCP: <http://mimer-aif-hackathon.icedc.se/swemo/sse>
+- Endpoint for SCB/Statistics Sweden MCP: <http://mimer-aif-hackathon.icedc.se/scb/mcp>
+
+In this hackathon, we execute MistralAI's Devstral 2 Small (256K, 24B) in H100 GPUs, served through multiple instances of vLLM. The model was chosen as it fits consumer hardware and therefore can simulating a home development for those who never did it.
+
 ## Recommended Tools
 
 The following tools are often useful for either installing MCP servers or building the final application for your hackathon.
@@ -10,6 +20,82 @@ The following tools are often useful for either installing MCP servers or buildi
 
 ## Standard installation with open-weights LLM on Mimer
 
+:::{admonition} Python
+:class: warning
+
+For security reasons, we always recommend you running OpenCode inside a Python environment, as it often wants to install libraries and execute code. To create and enter into an environment (valid mostly for WSL / Linux / Mac):
+
+```bash
+python3 -m venv my_local_environment
+source my_local_environment/bin/activate
+```
+
+Then you can either execute `pip3 install your-library-here` (e.g. `huggingface-hub`) or use `deactivate` to leave the environment.
+
+:::
+
+For this Hackathon, we support the usage of OpenCode as it is a free and opensource tool that do not require any third-party account. If you want to use other tools (Claude Code, Mistral Vibe, etc), you can directly refer to their documentation and configuration of custom endpoints.
+
+:::::::{tabs}
+
+::::{group-tab} Windows
+Please notice that while there are instructions for Windows, we strongly support using Windows Subsystem for Linux as the development environment is more robust and secure (i.e., it is easier to administrate Python environments). 
+
+1. Download the OpenCode at its official `download webpage <https://opencode.ai/download>`_
+2. Open OpenCode once, and close it.
+3. On Windows Explorer, open %USERPROFILE%\.config\opencode
+4. Create a file named `opencode.jsonc`, and insert the below content there:
+
+```json
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "mimer": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Mimer AI",
+      "options": {
+        "baseURL": "http://mimer-aif-hackathon.icedc.se/v1"
+      },
+      "models": {
+        "mistralai/Devstral-Small-2-24B-Instruct-2512": {
+          "name": "Devstral 2 Small (256k)",
+          "limit": {
+            "context": 262144,
+            "output": 262144
+          }
+        },
+      }
+    }
+  },
+  "model": "mistralai/Devstral-Small-2-24B-Instruct-2512",
+  "mcp": {
+    "swemo": {
+      "type": "remote",
+      "url": "http://mimer-aif-hackathon.icedc.se/swemo/sse",
+      "enabled": true
+    },
+    "scb": {
+      "type": "remote",
+      "url": "http://mimer-aif-hackathon.icedc.se/scb/mcp",
+      "enabled": true
+    }
+  }
+}
+```
+
+5. Now reopen OpenCode, and you should be able to select the model (Devstral 2 Small) and happy coding!
+
+::::
+
+::::{group-tab} WSL / Linux / Mac
+
+1. In your terminal, download OpenCode by running `curl -fsSL https://opencode.ai/install | bash`.
+2. Run `opencode`, and then type `exit`.
+3. Execute `cd ~/.config/opencode/` (create the directory if it doesn't exist), then use the editor of your preference and create a file `opencode.jsonc`.
+4. Run `opencode` and start using! Use `CTRL+P` to access menus and switch the models and/or the MCPs.
+5. Alternatively, you can run `opencode web --port 4096 --hostname 0.0.0.0` and start a web instance of it in your browser, which will be available on `http://localhost:4096`. 
+
+::::
 
 
 ## Fallback installation with bring-your-own LLM provider
