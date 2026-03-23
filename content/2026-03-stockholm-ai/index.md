@@ -26,6 +26,9 @@ You are of course free to use your favourite coding agent/IDE of choice.
 
 
 ```{toctree}
+:maxdepth: 2
+
 setup
+setup-fallback
 challenge
 ```
