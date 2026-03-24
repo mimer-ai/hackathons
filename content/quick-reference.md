@@ -61,8 +61,8 @@ The `<executable>` can be `python` or even something provided by a package such 
 
 ## Python scripts
 
-A new way (PEP 723) of developing scripts without while ensuring dependencies is 
-to add inline-script metadata which look like this:
+A new way (PEP 723) of developing scripts without having to ensure dependencies is 
+to add inline-script metadata which looks like this:
 
 ```py
 # /// script
@@ -81,4 +81,4 @@ import seaborn as sns
 
 No virtual environments are needed for such scripts to work.
 This can be executed using [`uv run`](https://docs.astral.sh/uv/guides/scripts/#creating-a-python-script)
-command and `pipx`.
+command and [`pipx`](https://pipx.pypa.io/).
