@@ -11,6 +11,8 @@
 
 Large Language Models (LLMs) are AI systems trained on vast amounts of text data to understand and generate human-like language. They excel at tasks like text completion, translation, summarization, and question-answering. LLMs leverage deep learning techniques, particularly transformer architectures, to process and generate coherent and contextually relevant text.
 
+In this hackathon, we will be focusing on the question-answering, code generation and tool-calling capabilities of LLMs.
+
 ## Agentic AI
 
 Agentic AI refers to systems that can autonomously perform tasks, make decisions, and interact with their environment to achieve specific goals.
@@ -34,6 +36,12 @@ MCPs (Model Context Protocol) is an open-source standard for connecting AI appli
 
 > Schematic of an MCP server. Source: [What is the Model Context Protocol (MCP)? - Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro)
 
+Today, we will only use MCP servers as *read-only* or *query* tools to replace the need for a RAG system. However it are much more uses of [MCP primitives](https://modelcontextprotocol.io/docs/learn/architecture#primitives) with which one can prepare reusable and few shot prompts templates and do so [much](https://modelcontextprotocol.io/extensions/apps/overview) [more](https://modelcontextprotocol.io/extensions/auth/overview). 
+
+:::{seealso}
+[Official MCP Registry](https://registry.modelcontextprotocol.io/)
+:::
+
 #### Other approaches with RAG and Fine-Tuning
 
 ![schematic of RAG](./images/rag.png)
@@ -42,7 +50,7 @@ MCPs (Model Context Protocol) is an open-source standard for connecting AI appli
 
 Retrieval-Augmented Generation (RAG) combines the strengths of retrieval-based and generative models, allowing systems to fetch relevant information from a knowledge base and generate responses based on that data. A RAG system can be thought of as an LLM model interacting with a **fuzzy search engine** in the "embedding space". 
 
-MCP is an alternative approach to RAG to carefully pass the context to the LLM, adding ability to add guardrails and validations.
+In comparison, MCP offers an alternative approach to RAG to carefully pass the context to the LLM, adding ability to add guardrails and validations.
 
 ![from prompt engineering, RAG, fine-tuning to training for scratch](./images/influence-llms.png)
 
