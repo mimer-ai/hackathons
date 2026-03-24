@@ -108,11 +108,12 @@ Please notice that while there are instructions for Windows, we strongly support
 
 ::::{group-tab} WSL / Linux / Mac
 
-1. In your terminal, download OpenCode by running
+1. In your terminal, download OpenCode by running[^link-to-install-script]
 
 ```sh
 curl -fsSL https://opencode.ai/install | bash
 ```
+
 2. Run `opencode`, and then type `exit` and hit <kbd>Enter</kbd>.
 3. Execute the following to prepare the configuration file
 ```sh
@@ -129,6 +130,9 @@ which will then be available on `http://localhost:4096`.
 
 ::::
 ::::::::
+
+[^link-to-install-script]: It is good practice to the read the install script and verify it. Click here <https://opencode.ai/install> and read it. Alternatively, you may also use `npm i -g opencode-ai` if you have a Node.js installlation.
+
 
 ::::::{callout} OpenCode JSON configuration
 ```json
