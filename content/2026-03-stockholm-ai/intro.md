@@ -13,10 +13,13 @@ Large Language Models (LLMs) are AI systems trained on vast amounts of text data
 
 ## Agentic AI
 
-Agentic AI refers to systems that can autonomously perform tasks, make decisions, and interact with their environment to achieve specific goals. Coding agents are conversational AI models with access to tools such as reading/writing files, web search, and invoking shell commands. They live either in the IDE or in standalone command-line or GUI tools. Coding agents are highly autonomous and powerful tools, enabling a wide variety of use cases.
+Agentic AI refers to systems that can autonomously perform tasks, make decisions, and interact with their environment to achieve specific goals.
+
+One way of designing an "agentic workflow" would be to repurpose coding agent harnesses. Coding agents are conversational AI models with access to tools such as reading/writing files, web search, and invoking shell commands. They live either in the IDE or in standalone command-line or GUI tools. This means they can be made highly autonomous through tool-calling or MCPs, enabling a wide variety of use cases.
 
 :::{seealso}
-[Agentic AI Foundation (AAIF)](https://aaif.io/), a Linux Foundation project
+- [Wait, what is agentic AI? - Stack Overflow](https://stackoverflow.blog/2025/04/17/wait-what-is-agentic-ai/)
+- [Agentic AI Foundation (AAIF)](https://aaif.io/), a Linux Foundation project
 :::
 
 ## Context and domain knowledge
@@ -47,7 +50,6 @@ MCP is an alternative approach to RAG to carefully pass the context to the LLM, 
 
 Fine-tuning, on the other hand, involves training a pre-trained model on a specific dataset to adapt it to a particular task or domain. While RAG is flexible and can handle dynamic information, fine-tuning provides more specialized and optimized performance for specific tasks. Based on your needs, the choice between RAG / MCP and fine-tuning depends on the nature of your data, the specific requirements of your application and the compute available.
 
-
 ### Skills
 
 Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows. They allow agents to load procedural knowledge and context on demand, enabling them to perform tasks more accurately and efficiently. Skills are defined in a `SKILL.md` file and can include instructions, scripts, and resources.
@@ -57,6 +59,15 @@ Skills are a lightweight, open format for extending AI agent capabilities with s
 - [Simon Willison's blog on skills](https://simonwillison.net/tags/skills/)
 :::
 
+
+### Context management
+
+If there is one thing you should remember, it would be to **take care of your context window**.
+
+A drawback of RAG and MCP is that you need a context window upwards of 32k tokens. This is due to the additional overhead of system prompts and tool descriptionthat is hidden in plain sight. During the hackathon these commands within OpenCode (or equivalent) will turn out to be useful:
+
+- `/clear` - **Clears the context window**. The most basic control, coding agents support clearing the context window (starting a new conversation), which you should do for unrelated queries.
+- `/compact` - **Compaction**. To enable conversations of unbounded length, coding agents support context compaction: if the conversation history grows too long, they will automatically call an LLM to summarize the prefix of the conversation, and replace the conversation history with the summary. Some agents give control to the user to invoke compaction when desired.
 
 ## Summary
 
