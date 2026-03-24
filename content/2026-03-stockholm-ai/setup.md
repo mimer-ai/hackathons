@@ -138,7 +138,7 @@ Launch Git bash from the start menu. It should [look like this](https://gitforwi
 $ mkdir -p $USERPROFILE/.config/opencode/skills
 
 $ git clone https://github.com/ashwinvis/scb-opendata-skills
-$ cp -r scb-opendata-skills/skills/*  $USERPROFILE/.config/opencode/skills/  # Global configuration
+$ cp -r scb-opendata-skills/skills/*  $USERPROFILE/.config/opencode/skills/
 ```
 ::::
 
@@ -147,7 +147,7 @@ $ cp -r scb-opendata-skills/skills/*  $USERPROFILE/.config/opencode/skills/  # G
 $ mkdir -p ~/.config/opencode/skills
 
 $ git clone https://github.com/ashwinvis/scb-opendata-skills
-$ cp -r scb-opendata-skills/skills/*  ~/.config/opencode/skills/  # Global configuration
+$ cp -r scb-opendata-skills/skills/*  ~/.config/opencode/skills/
 ```
 ::::
 
