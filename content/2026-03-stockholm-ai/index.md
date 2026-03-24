@@ -3,7 +3,7 @@
 :::{prereq}
 
 - You are registered with the event
-- No have dabbled with coding agents or are curious about it
+- You have dabbled with AI agents or are curious about it
 
 :::
 
