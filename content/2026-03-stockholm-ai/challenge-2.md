@@ -41,8 +41,12 @@ Calculate the annual inflation rate for each measure and visualize the trends.
 
 :::{tip}
 - Instruct which library to use:
-  - Generate a Python app which uses libraries like Plotly, Matplotlib, Gradio, Streamlit etc.
-  - Use Javascript (either front-end only or full-stack) app which uses D3.js, Chart.js
+  - Generate a Python app which uses libraries like [Plotly](https://plotly.com/python/), [Matplotlib](https://matplotlib.org/), [Gradio](https://gradio.app/), [Streamlit](https://streamlit.io/), [Holoviz](https://holoviz.org/), [Altair](https://altair-viz.github.io/), [Seaborn](https://seaborn.pydata.org/), or [Bokeh](https://bokeh.org/)
+  - Use Javascript (either front-end only or full-stack) app which uses [D3.js](https://d3js.org/), [Chart.js](https://www.chartjs.org/), [Vega-Lite](https://vega.github.io/vega-lite/), [Observable Plot](https://observablehq.com/plot/), or [Pico.css](https://picocss.com/)
+
+  For data handling, SCB returns JSON-stat responses which can be processed using:
+  - Python: [pyjstat](https://pypi.org/project/pyjstat/)
+  - JavaScript: [jsonstat-toolkit](https://www.npmjs.com/package/jsonstat-toolkit)
 :::
 
 2. **Extended Analysis**: Extend the analysis to include more years (e.g., 2010-2025) to identify longer-term trends.
