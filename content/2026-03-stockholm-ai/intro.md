@@ -36,7 +36,7 @@ MCPs (Model Context Protocol) is an open-source standard for connecting AI appli
 
 > Schematic of an MCP server. Source: [What is the Model Context Protocol (MCP)? - Model Context Protocol](https://modelcontextprotocol.io/docs/getting-started/intro)
 
-Today, we will only use MCP servers as *read-only* or *query* tools to replace the need for a RAG system. However it are much more uses of [MCP primitives](https://modelcontextprotocol.io/docs/learn/architecture#primitives) with which one can prepare reusable and few shot prompts templates and do so [much](https://modelcontextprotocol.io/extensions/apps/overview) [more](https://modelcontextprotocol.io/extensions/auth/overview). 
+Today, we will only use MCP servers as *read-only* or *query* tools to replace the need for a RAG system. However there are other [MCP primitives](https://modelcontextprotocol.io/docs/learn/architecture#primitives) with which one can prepare reusable and few shot prompts templates and do so [much](https://modelcontextprotocol.io/extensions/apps/overview) [more](https://modelcontextprotocol.io/extensions/auth/overview). 
 
 :::{seealso}
 [Official MCP Registry](https://registry.modelcontextprotocol.io/)
@@ -72,10 +72,14 @@ Skills are a lightweight, open format for extending AI agent capabilities with s
 
 If there is one thing you should remember, it would be to **take care of your context window**.
 
-A drawback of RAG and MCP is that you need a context window upwards of 32k tokens. This is due to the additional overhead of system prompts and tool descriptionthat is hidden in plain sight. During the hackathon these commands within OpenCode (or equivalent) will turn out to be useful:
+A drawback of RAG and MCP is that you need a context window upwards of 32k tokens. This is due to the additional overhead of system prompts and tool description, which is hidden in plain sight. During the hackathon these commands within OpenCode (or equivalent) will turn out to be useful:
 
 - `/clear` - **Clears the context window**. The most basic control, coding agents support clearing the context window (starting a new conversation), which you should do for unrelated queries.
 - `/compact` - **Compaction**. To enable conversations of unbounded length, coding agents support context compaction: if the conversation history grows too long, they will automatically call an LLM to summarize the prefix of the conversation, and replace the conversation history with the summary. Some agents give control to the user to invoke compaction when desired.
+
+:::{seealso}
+[Agentic Coding · Missing Semester](https://missing.csail.mit.edu/2026/agentic-coding/)
+:::
 
 ## Summary
 
@@ -88,7 +92,7 @@ This hackathon aims to inspire you on how to use agentic AI for your own interna
 to demonstrate the potential of sovereign AI. If you learned something new, that's a bonus! Our goal is to empower you with the knowledge and tools to leverage agentic AI effectively.
 
 :::{keypoints}
-- Your data, your rules: Use agentic AI to harness your internal data.
+- Your data, your rules: Use this as inspiration to make use of agentic AI to harness your internal data.
 - Sovereign AI: Explore the potential of open-weight LLM models.
 - Spreading the word: Expand your skills and knowledge in AI.
 :::
