@@ -24,6 +24,14 @@ You are of course free to use your favourite coding agent/IDE of choice.
 
 ```
 
+:::{important}
+![](images/checkout-device.jpeg){width=300px align=right}
+
+Before leaving the RISE offices, please remember to **scan your badge** in the device shown here.
+
+You can then return the orange tag at the reception.
+:::
+
 ## Instructions
 
 
