@@ -65,9 +65,9 @@ curl -fsSL https://opencode.ai/install | bash
 2. Run `opencode`, and then type `exit` and hit <kbd>Enter</kbd>.
 3. Execute the following to prepare the configuration file
 ```sh
-mkdir -p ~/.config/opencode/  # create the directory if it doesn't exist
+mkdir -p ~/.config/opencode/
 cd ~/.config/opencode/
-touch opencode.jsonc  # create the configuration file if it doesn't exist
+touch opencode.jsonc
 ``` 
 4. Then use your favourite text editor to replace the contents of `opencode.jsonc`,
    with the JSON configuration **given below**.
@@ -138,7 +138,7 @@ Launch Git bash from the start menu. It should [look like this](https://gitforwi
 $ mkdir -p $USERPROFILE/.config/opencode/skills
 
 $ git clone https://github.com/ashwinvis/scb-opendata-skills
-$ cp -r scb-opendata-skills/skills/*  $USERPROFILE/.config/opencode/skills/  # Global configuration
+$ cp -r scb-opendata-skills/skills/*  $USERPROFILE/.config/opencode/skills/
 ```
 ::::
 
@@ -147,7 +147,7 @@ $ cp -r scb-opendata-skills/skills/*  $USERPROFILE/.config/opencode/skills/  # G
 $ mkdir -p ~/.config/opencode/skills
 
 $ git clone https://github.com/ashwinvis/scb-opendata-skills
-$ cp -r scb-opendata-skills/skills/*  ~/.config/opencode/skills/  # Global configuration
+$ cp -r scb-opendata-skills/skills/*  ~/.config/opencode/skills/
 ```
 ::::
 
