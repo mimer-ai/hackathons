@@ -20,7 +20,7 @@ You are of course free to use your favourite coding agent/IDE of choice.
 18:00; Introduction to Mimer and the hackathon task. The task will be to create "research agents" using Mimer and open weight models that can answer questions using Sweden's public data (e.g. SCB).
 18:30; Hackathon begins
 19:55; Wrap-up presentations and demos
-~~20:00; Wrap-up presentations and demos~~
+~~20:00~~; ~~Wrap-up presentations and demos~~
 20:30; Home time
 
 ```
