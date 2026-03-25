@@ -19,6 +19,13 @@ Agentic AI refers to systems that can autonomously perform tasks, make decisions
 
 One way of designing an "agentic workflow" would be to repurpose coding agent harnesses. Coding agents are conversational AI models with access to tools such as reading/writing files, web search, and invoking shell commands. They live either in the IDE or in standalone command-line or GUI tools. This means they can be made highly autonomous through tool-calling or MCPs, enabling a wide variety of use cases.
 
+![](https://coderefinery.github.io/coding-with-ai/_images/agentic.png){width="75%" align=center}
+
+> Example of using agentic AI for coding.
+> Source: [CodeRefinery lesson on Responsible Use of Generative AI in Assisted Coding](https://coderefinery.github.io/coding-with-ai/scenario-agentic/)
+
+**With great power comes great responsibility**. Oversee each step of your agentic development and try to manually allow when tools are suggested by the agent harness to execute.
+
 :::{seealso}
 - [Wait, what is agentic AI? - Stack Overflow](https://stackoverflow.blog/2025/04/17/wait-what-is-agentic-ai/)
 - [Agentic AI Foundation (AAIF)](https://aaif.io/), a Linux Foundation project
