@@ -1,12 +1,16 @@
 # Wrap up
 
+We start at ~~20:00:~~ **19:55 (NEW TIME!)** with the wrap up and demos.
+
 :::{objectives}
-- Each team presents for 3.5 minutes sharing their hack
+- Each team presents for **5 minutes** sharing their hack.
 :::
 
 :::{questions}
-- Did you find something interesting?
-- Thoughts on your experience?
+Some suggested questions to present:
+
+- Did you find something interesting or unexpected from the data through your hacks?
+- Are there any thoughts on your experience with this workflow?
 :::
 
 
