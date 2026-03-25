@@ -1,0 +1,1119 @@
+<!doctype html>
+<html class="no-js" lang="en" data-content_root="./">
+  <head><meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="color-scheme" content="light dark"><meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="index" title="Index" href="genindex.html"><link rel="search" title="Search" href="search.html">
+        <link rel="prefetch" href="_static/Mimer_logo_light.png" as="image">
+        <link rel="prefetch" href="_static/Mimer_logo_dark.png" as="image">
+
+    <link rel="shortcut icon" href="_static/favicon.png"><!-- Generated with Sphinx 8.2.3 and Furo 2025.12.19 -->
+        <title>Hackathons</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=d111a655" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo.css?v=7bdb33bb" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.11b39860a7a0cbfd473a3ad8a317855267ff0bd372690045ca344a6b62be495e.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx_lesson.css?v=e9df6548" />
+    <link rel="stylesheet" type="text/css" href="_static/term_role_formatting.css?v=4194e21c" />
+    <link rel="stylesheet" type="text/css" href="_static/furo_ext_lesson.css?v=4df71876" />
+    <link rel="stylesheet" type="text/css" href="_static/tabs.css?v=a5c4661c" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/furo-extensions.css?v=8dab3a3b" />
+    <link rel="stylesheet" type="text/css" href="_static/overrides.css?v=1c72d2de" />
+    
+    
+
+
+<style>
+  body {
+    --color-code-background: #f2f2f2;
+  --color-code-foreground: #1e1e1e;
+  
+  }
+  @media not print {
+    body[data-theme="dark"] {
+      --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+    }
+    @media (prefers-color-scheme: dark) {
+      body:not([data-theme="light"]) {
+        --color-code-background: #202020;
+  --color-code-foreground: #d0d0d0;
+  
+      }
+    }
+  }
+</style></head>
+  <body>
+    
+    <script>
+      document.body.dataset.theme = localStorage.getItem("theme") || "auto";
+    </script>
+    
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+  <symbol id="svg-toc" viewBox="0 0 24 24">
+    <title>Contents</title>
+    <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024">
+      <path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-menu" viewBox="0 0 24 24">
+    <title>Menu</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-menu">
+      <line x1="3" y1="12" x2="21" y2="12"></line>
+      <line x1="3" y1="6" x2="21" y2="6"></line>
+      <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-arrow-right" viewBox="0 0 24 24">
+    <title>Expand</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather-chevron-right">
+      <polyline points="9 18 15 12 9 6"></polyline>
+    </svg>
+  </symbol>
+  <symbol id="svg-sun" viewBox="0 0 24 24">
+    <title>Light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather-sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon" viewBox="0 0 24 24">
+    <title>Dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-moon">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" />
+    </svg>
+  </symbol>
+  <symbol id="svg-sun-with-moon" viewBox="0 0 24 24">
+    <title>Auto light/dark, in light mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path style="opacity: 50%" d="M 5.411 14.504 C 5.471 14.504 5.532 14.504 5.591 14.504 C 3.639 16.319 4.383 19.569 6.931 20.352 C 7.693 20.586 8.512 20.551 9.25 20.252 C 8.023 23.207 4.056 23.725 2.11 21.184 C 0.166 18.642 1.702 14.949 4.874 14.536 C 5.051 14.512 5.231 14.5 5.411 14.5 L 5.411 14.504 Z"/>
+      <line x1="14.5" y1="3.25" x2="14.5" y2="1.25"/>
+      <line x1="14.5" y1="15.85" x2="14.5" y2="17.85"/>
+      <line x1="10.044" y1="5.094" x2="8.63" y2="3.68"/>
+      <line x1="19" y1="14.05" x2="20.414" y2="15.464"/>
+      <line x1="8.2" y1="9.55" x2="6.2" y2="9.55"/>
+      <line x1="20.8" y1="9.55" x2="22.8" y2="9.55"/>
+      <line x1="10.044" y1="14.006" x2="8.63" y2="15.42"/>
+      <line x1="19" y1="5.05" x2="20.414" y2="3.636"/>
+      <circle cx="14.5" cy="9.55" r="3.6"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-moon-with-sun" viewBox="0 0 24 24">
+    <title>Auto light/dark, in dark mode</title>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
+      class="icon-custom-derived-from-feather-sun-and-tabler-moon">
+      <path d="M 8.282 7.007 C 8.385 7.007 8.494 7.007 8.595 7.007 C 5.18 10.184 6.481 15.869 10.942 17.24 C 12.275 17.648 13.706 17.589 15 17.066 C 12.851 22.236 5.91 23.143 2.505 18.696 C -0.897 14.249 1.791 7.786 7.342 7.063 C 7.652 7.021 7.965 7 8.282 7 L 8.282 7.007 Z"/>
+      <line style="opacity: 50%" x1="18" y1="3.705" x2="18" y2="2.5"/>
+      <line style="opacity: 50%" x1="18" y1="11.295" x2="18" y2="12.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="4.816" x2="14.464" y2="3.964"/>
+      <line style="opacity: 50%" x1="20.711" y1="10.212" x2="21.563" y2="11.063"/>
+      <line style="opacity: 50%" x1="14.205" y1="7.5" x2="13.001" y2="7.5"/>
+      <line style="opacity: 50%" x1="21.795" y1="7.5" x2="23" y2="7.5"/>
+      <line style="opacity: 50%" x1="15.316" y1="10.184" x2="14.464" y2="11.036"/>
+      <line style="opacity: 50%" x1="20.711" y1="4.789" x2="21.563" y2="3.937"/>
+      <circle style="opacity: 50%" cx="18" cy="7.5" r="2.169"/>
+    </svg>
+  </symbol>
+  <symbol id="svg-pencil" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-pencil-code">
+      <path d="M4 20h4l10.5 -10.5a2.828 2.828 0 1 0 -4 -4l-10.5 10.5v4" />
+      <path d="M13.5 6.5l4 4" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+  <symbol id="svg-eye" viewBox="0 0 24 24">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="icon-tabler-eye-code">
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+      <path
+        d="M11.11 17.958c-3.209 -.307 -5.91 -2.293 -8.11 -5.958c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6c-.21 .352 -.427 .688 -.647 1.008" />
+      <path d="M20 21l2 -2l-2 -2" />
+      <path d="M17 17l-2 2l2 2" />
+    </svg>
+  </symbol>
+</svg>
+
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle site navigation sidebar">
+<input type="checkbox" class="sidebar-toggle" name="__toc" id="__toc" aria-label="Toggle table of contents sidebar">
+<label class="overlay sidebar-overlay" for="__navigation"></label>
+<label class="overlay toc-overlay" for="__toc"></label>
+
+<a class="skip-to-content muted-link" href="#furo-main-content">Skip to content</a>
+
+
+
+<div class="page">
+  <header class="mobile-header">
+    <div class="header-left">
+      <label class="nav-overlay-icon" for="__navigation">
+        <span class="icon"><svg><use href="#svg-menu"></use></svg></span>
+      </label>
+    </div>
+    <div class="header-center">
+      <a href="#"><div class="brand">Hackathons</div></a>
+    </div>
+    <div class="header-right">
+      <div class="theme-toggle-container theme-toggle-header">
+        <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+          <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+          <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+          <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+          <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+        </button>
+      </div>
+      <label class="toc-overlay-icon toc-header-icon" for="__toc">
+        <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+      </label>
+    </div>
+  </header>
+  <aside class="sidebar-drawer">
+    <div class="sidebar-container">
+      
+      <div class="sidebar-sticky"><a class="sidebar-brand" href="#">
+  <div class="sidebar-logo-container">
+    <img class="sidebar-logo only-light" src="_static/Mimer_logo_light.png" alt="Light Logo"/>
+    <img class="sidebar-logo only-dark" src="_static/Mimer_logo_dark.png" alt="Dark Logo"/>
+  </div>
+  
+  <span class="sidebar-brand-text">Hackathons</span>
+  
+</a><form class="sidebar-search-container" method="get" action="search.html" role="search">
+  <input class="sidebar-search" placeholder="Search" name="q" aria-label="Search">
+  <input type="hidden" name="check_keywords" value="yes">
+  <input type="hidden" name="area" value="default">
+</form>
+<div id="searchbox"></div><div class="sidebar-scroll"><div class="sidebar-tree">
+  <p class="caption" role="heading"><span class="caption-text">List of hackathons</span></p>
+<ul>
+<li class="toctree-l1 has-children"><a class="reference internal" href="#document-2026-03-stockholm-ai/index">25 March 2026: Agentic AI with Swedish public data</a><input aria-label="Toggle navigation of 25 March 2026: Agentic AI with Swedish public data" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" role="switch" type="checkbox"/><label for="toctree-checkbox-1"><span class="icon"><svg><use href="#svg-arrow-right"></use></svg></span></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/setup">Setup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/setup-fallback">Fallback installation with bring-your-own LLM provider</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/intro">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/challenge-1">Challenge 1: Regional Emission Intensity Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/challenge-2">Challenge 2: Inflation Measures Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/challenge-3">Challenge 3: Electricity Production and Use Analysis</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/epilogue">Wrap up</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/epilogue#feedback">Feedback</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-quick-reference">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-guide">Instructor’s guide</a></li>
+</ul>
+
+</div>
+</div>
+
+      </div>
+      
+    </div>
+  </aside>
+  <div class="main">
+    <div class="content">
+      <div class="article-container">
+        <a href="#" class="back-to-top muted-link">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12z"></path>
+          </svg>
+          <span>Back to top</span>
+        </a>
+        <div class="content-icon-container">
+          <div class="theme-toggle-container theme-toggle-content">
+            <button class="theme-toggle" aria-label="Toggle Light / Dark / Auto color theme">
+              <svg class="theme-icon-when-auto-light"><use href="#svg-sun-with-moon"></use></svg>
+              <svg class="theme-icon-when-auto-dark"><use href="#svg-moon-with-sun"></use></svg>
+              <svg class="theme-icon-when-dark"><use href="#svg-moon"></use></svg>
+              <svg class="theme-icon-when-light"><use href="#svg-sun"></use></svg>
+            </button>
+          </div>
+          <label class="toc-overlay-icon toc-content-icon" for="__toc">
+            <span class="icon"><svg><use href="#svg-toc"></use></svg></span>
+          </label>
+        </div>
+        <article role="main" id="furo-main-content">
+          <section id="hackathons-by-mimer-aif">
+<h1>Hackathons by Mimer AIF<a class="headerlink" href="#hackathons-by-mimer-aif" title="Link to this heading">¶</a></h1>
+<p>Intro</p>
+<div class="toctree-wrapper compound">
+<span id="document-2026-03-stockholm-ai/index"></span><section id="march-2026-agentic-ai-with-swedish-public-data">
+<h2>25 March 2026: Agentic AI with Swedish public data<a class="headerlink" href="#march-2026-agentic-ai-with-swedish-public-data" title="Link to this heading">¶</a></h2>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<ul class="simple">
+<li><p>You are registered with the event</p></li>
+<li><p>You have dabbled with AI agents or are curious about it</p></li>
+</ul>
+</div>
+<p>The task will be to create “research agents” using Mimer and open weight models that can answer questions using Sweden’s public data (from SCB and Riksbanken).
+You are of course free to use your favourite coding agent/IDE of choice.</p>
+<section id="schedule">
+<h3>Schedule<a class="headerlink" href="#schedule" title="Link to this heading">¶</a></h3>
+<div class="table-wrapper colwidths-auto docutils container">
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p>17:15</p></td>
+<td><p>Doors open + mingle</p></td>
+</tr>
+<tr class="row-even"><td><p>18:00</p></td>
+<td><p>Introduction to Mimer and the hackathon task. The task will be to create “research agents” using Mimer and open weight models that can answer questions using Sweden’s public data (e.g. SCB).</p></td>
+</tr>
+<tr class="row-odd"><td><p>18:30</p></td>
+<td><p>Hackathon begins</p></td>
+</tr>
+<tr class="row-even"><td><p>19:55</p></td>
+<td><p>Wrap-up presentations and demos</p></td>
+</tr>
+<tr class="row-odd"><td><p><s>20:00</s></p></td>
+<td><p><s>Wrap-up presentations and demos</s></p></td>
+</tr>
+<tr class="row-even"><td><p>20:30</p></td>
+<td><p>Home time</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><a class="reference internal" href="_images/checkout-device.jpeg"><img alt="" class="align-right" src="_images/checkout-device.jpeg" style="width: 300px;" /></a></p>
+<p>Before leaving the RISE offices, please remember to <strong>scan your badge</strong> in the device shown here.</p>
+<p>You can then return the orange tag at the reception.</p>
+</div>
+</section>
+<section id="instructions">
+<h3>Instructions<a class="headerlink" href="#instructions" title="Link to this heading">¶</a></h3>
+<div class="toctree-wrapper compound">
+<span id="document-2026-03-stockholm-ai/setup"></span><section id="setup">
+<h4>Setup<a class="headerlink" href="#setup" title="Link to this heading">¶</a></h4>
+<div class="hint admonition">
+<p class="admonition-title">TLDR; The Endpoints</p>
+<p>While we provide instructions below for several tools (<code class="docutils literal notranslate"><span class="pre">npm</span></code>, <code class="docutils literal notranslate"><span class="pre">uv</span></code>, <code class="docutils literal notranslate"><span class="pre">opencode</span></code> etc.). If you are in a hurry, here are the information about the <strong>inference and MCP endpoints</strong>
+for your reference.</p>
+<ul class="simple">
+<li><p>Endpoint for the model:  <a class="reference external" href="http://mimer-aif-hackathon.icedc.se/v1">http://mimer-aif-hackathon.icedc.se/v1</a></p></li>
+<li><p>Endpoint for Riksbanken MCP: <a class="reference external" href="http://mimer-aif-hackathon.icedc.se/swemo/sse">http://mimer-aif-hackathon.icedc.se/swemo/sse</a></p></li>
+<li><p>Endpoint for SCB/Statistics Sweden MCP: <a class="reference external" href="http://mimer-aif-hackathon.icedc.se/scb/mcp">http://mimer-aif-hackathon.icedc.se/scb/mcp</a></p></li>
+</ul>
+<p>We have also added a skills repo for the SCB MCP available here: <a class="reference external" href="https://github.com/ashwinvis/scb-opendata-skills">https://github.com/ashwinvis/scb-opendata-skills</a></p>
+<p>In this hackathon, we execute MistralAI’s Devstral 2 Small (256K, 24B) in H100 GPUs, served through multiple instances of vLLM. The model was chosen as it fits consumer hardware and therefore can simulating a home development for those who never did it.</p>
+</div>
+<section id="recommended-tools">
+<h5>Recommended Tools<a class="headerlink" href="#recommended-tools" title="Link to this heading">¶</a></h5>
+<p>The following tools are often useful for either installing MCP servers or building the final application for your hackathon.</p>
+<ul class="simple">
+<li><p>Node.js via <code class="docutils literal notranslate"><span class="pre">npm</span></code> and <code class="docutils literal notranslate"><span class="pre">npx</span></code> commands: Follow instructions at <a class="reference external" href="https://nodejs.org/en/download">https://nodejs.org/en/download</a></p></li>
+<li><p>Python via <code class="docutils literal notranslate"><span class="pre">uv</span></code> and <code class="docutils literal notranslate"><span class="pre">uvx</span></code> commands: Follow instructions at <a class="reference external" href="https://docs.astral.sh/uv/getting-started/installation/">https://docs.astral.sh/uv/getting-started/installation/</a></p></li>
+<li><p><strong>(Optional, but convenient to have)</strong> Git for cloning skill repositories instead of downloading. We use <code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">clone</span></code> command in instructions below. Follow instructions at <a class="reference external" href="https://git-scm.com/">https://git-scm.com/</a> to get <code class="docutils literal notranslate"><span class="pre">git</span></code>.</p></li>
+</ul>
+<div class="tip admonition">
+<p class="admonition-title">Note on virtual environments</p>
+<p>We have prepared a guide on <a class="reference internal" href="#document-quick-reference#python-venv"><span class="std std-ref">Python and use of virtual environments</span></a> if you are unfamiliar with it.</p>
+</div>
+</section>
+<section id="standard-installation-with-open-weights-llm-from-mimer">
+<span id="standard-installation"></span><h5>Standard installation with open-weights LLM from Mimer<a class="headerlink" href="#standard-installation-with-open-weights-llm-from-mimer" title="Link to this heading">¶</a></h5>
+<p>For this Hackathon, we support the usage of OpenCode as it is a free and opensource tool that do not require any third-party account.
+If you want to use other tools (Claude Code, Mistral Vibe, etc), you can directly refer to their documentation and configuration of custom endpoints.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-V2luZG93cw==" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-V2luZG93cw==" name="V2luZG93cw==" role="tab" tabindex="0">Windows</button><button aria-controls="panel-0-V1NMIC8gTGludXggLyBNYWM=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-V1NMIC8gTGludXggLyBNYWM=" name="V1NMIC8gTGludXggLyBNYWM=" role="tab" tabindex="-1">WSL / Linux / Mac</button></div><div aria-labelledby="tab-0-V2luZG93cw==" class="sphinx-tabs-panel group-tab" id="panel-0-V2luZG93cw==" name="V2luZG93cw==" role="tabpanel" tabindex="0"><div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please notice that while there are instructions for Windows, we strongly support using Windows Subsystem for Linux (see <strong>WSL</strong> in the next tab) as the development environment is more robust and secure (i.e., it is easier to administrate Python environments).</p>
+</div>
+<ol class="arabic simple">
+<li><p>Download the OpenCode at its official <a class="reference external" href="https://opencode.ai/download">download webpage</a>.</p></li>
+<li><p>Open OpenCode once, and close it.</p></li>
+<li><p>On Windows Explorer, open <code class="docutils literal notranslate"><span class="pre">%USERPROFILE%\.config\opencode</span></code></p></li>
+<li><p>Create a file named <code class="docutils literal notranslate"><span class="pre">opencode.jsonc</span></code>, and insert the JSON configuration <strong>given below</strong>, replacing the entire content, if the file was not empty:</p></li>
+<li><p>Now reopen OpenCode.</p></li>
+</ol>
+</div><div aria-labelledby="tab-0-V1NMIC8gTGludXggLyBNYWM=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-V1NMIC8gTGludXggLyBNYWM=" name="V1NMIC8gTGludXggLyBNYWM=" role="tabpanel" tabindex="0"><ol class="arabic simple">
+<li><p>In your terminal, download OpenCode by running<a class="footnote-reference brackets" href="#link-to-install-script" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a></p></li>
+</ol>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://opencode.ai/install<span class="w"> </span><span class="p">|</span><span class="w"> </span>bash
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">opencode</span></code>, and then type <code class="docutils literal notranslate"><span class="pre">exit</span></code> and hit <kbd>Enter</kbd>.</p></li>
+<li><p>Execute the following to prepare the configuration file</p></li>
+</ol>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/opencode/
+<span class="nb">cd</span><span class="w"> </span>~/.config/opencode/
+touch<span class="w"> </span>opencode.jsonc
+</pre></div>
+</div>
+<ol class="arabic simple" start="4">
+<li><p>Then use your favourite text editor to replace the contents of <code class="docutils literal notranslate"><span class="pre">opencode.jsonc</span></code>,
+with the JSON configuration <strong>given below</strong>.</p></li>
+<li><p>Run <code class="docutils literal notranslate"><span class="pre">opencode</span></code> and start using it!</p></li>
+</ol>
+<p><strong>(Optional)</strong>: you can also run <code class="docutils literal notranslate"><span class="pre">opencode</span> <span class="pre">web</span> <span class="pre">--port</span> <span class="pre">4096</span> <span class="pre">--hostname</span> <span class="pre">0.0.0.0</span></code> and start a web instance of it in your browser,
+which will then be available on <code class="docutils literal notranslate"><span class="pre">http://localhost:4096</span></code>.</p>
+</div></div>
+<div class="admonition-opencode-json-configuration callout admonition" id="callout-0">
+<p class="admonition-title">OpenCode JSON configuration</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opencode.ai/config.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;provider&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;mimer&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;npm&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;@ai-sdk/openai-compatible&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Mimer AI&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;options&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;baseURL&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://mimer-aif-hackathon.icedc.se/v1&quot;</span>
+<span class="w">      </span><span class="p">},</span>
+<span class="w">      </span><span class="nt">&quot;models&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;mistralai/Devstral-Small-2-24B-Instruct-2512&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">          </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Devstral 2 Small (256k)&quot;</span><span class="p">,</span>
+<span class="w">          </span><span class="nt">&quot;limit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;context&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">262144</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;output&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">262144</span>
+<span class="w">          </span><span class="p">}</span>
+<span class="w">        </span><span class="p">},</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">},</span>
+<span class="w">  </span><span class="nt">&quot;model&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;mistralai/Devstral-Small-2-24B-Instruct-2512&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;mcp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;scb_opendata_mcp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;remote&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://mimer-aif-hackathon.icedc.se/scb/mcp&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;swemo-mcp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;remote&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;http://mimer-aif-hackathon.icedc.se/swemo/sse&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>Use <code class="docutils literal notranslate"><span class="pre">Ctrl+P</span></code> to access menus and switch the models and/or the MCPs. You can also use slash commands like <code class="docutils literal notranslate"><span class="pre">/models</span></code> and <code class="docutils literal notranslate"><span class="pre">/mcps</span></code>. You should now be able to select the model <strong>(Devstral 2 Small (256k))</strong>.</p>
+<section id="skills">
+<h6>Skills<a class="headerlink" href="#skills" title="Link to this heading">¶</a></h6>
+<p>Agent <a class="reference external" href="https://opencode.ai/docs/skills/">skills</a> can be added by running the commands:</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-1-V2luZG93cyB3aXRoIEdpdCBCYXNo" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-1-V2luZG93cyB3aXRoIEdpdCBCYXNo" name="V2luZG93cyB3aXRoIEdpdCBCYXNo" role="tab" tabindex="0">Windows with Git Bash</button><button aria-controls="panel-1-V1NML0xpbnV4L01hY09T" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-1-V1NML0xpbnV4L01hY09T" name="V1NML0xpbnV4L01hY09T" role="tab" tabindex="-1">WSL/Linux/MacOS</button></div><div aria-labelledby="tab-1-V2luZG93cyB3aXRoIEdpdCBCYXNo" class="sphinx-tabs-panel group-tab" id="panel-1-V2luZG93cyB3aXRoIEdpdCBCYXNo" name="V2luZG93cyB3aXRoIEdpdCBCYXNo" role="tabpanel" tabindex="0"><p>Launch Git bash from the start menu. It should <a class="reference external" href="https://gitforwindows.org/img/gw1.png">look like this</a>. Then run the following commands.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$USERPROFILE</span>/.config/opencode/skills
+
+<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ashwinvis/scb-opendata-skills
+<span class="gp">$ </span>cp<span class="w"> </span>-r<span class="w"> </span>scb-opendata-skills/skills/*<span class="w">  </span><span class="nv">$USERPROFILE</span>/.config/opencode/skills/
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-1-V1NML0xpbnV4L01hY09T" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-1-V1NML0xpbnV4L01hY09T" name="V1NML0xpbnV4L01hY09T" role="tabpanel" tabindex="0"><div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/opencode/skills
+
+<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ashwinvis/scb-opendata-skills
+<span class="gp">$ </span>cp<span class="w"> </span>-r<span class="w"> </span>scb-opendata-skills/skills/*<span class="w">  </span>~/.config/opencode/skills/
+</pre></div>
+</div>
+</div></div>
+<p>Happy coding 🥳!</p>
+</section>
+</section>
+</section>
+<hr class="footnotes docutils" />
+<aside class="footnote-list brackets">
+<aside class="footnote brackets" id="link-to-install-script" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
+<p>It is good practice to the read the install script and verify it. Click here <a class="reference external" href="https://opencode.ai/install">https://opencode.ai/install</a> and read it. Alternatively, you may also use <code class="docutils literal notranslate"><span class="pre">npm</span> <span class="pre">i</span> <span class="pre">-g</span> <span class="pre">opencode-ai</span></code> if you have a Node.js installlation.</p>
+</aside>
+</aside>
+<span id="document-2026-03-stockholm-ai/setup-fallback"></span><section id="fallback-installation-with-bring-your-own-llm-provider">
+<span id="fallback-installation"></span><h4>Fallback installation with bring-your-own LLM provider<a class="headerlink" href="#fallback-installation-with-bring-your-own-llm-provider" title="Link to this heading">¶</a></h4>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you managed to install using the instructions in the section <a class="reference internal" href="#document-2026-03-stockholm-ai/setup#standard-installation"><span class="std std-ref">Standard installation with open-weights LLM from Mimer</span></a>, you can skip this section.</p>
+</div>
+<p>For illustrative purposes we show how to locally install <strong>MCP servers</strong> and <strong>agent skills</strong> in the following agentic harnesses: OpenCode, Mistral Vibe and Claude Code.</p>
+<div class="admonition-prerequisites prerequisites admonition" id="prerequisites-0">
+<p class="admonition-title">Prerequisites</p>
+<p>Here we assume that you have</p>
+<ul class="simple">
+<li><p>installed the agentic harness of your choice, and</p></li>
+<li><p>connected or authenticated to an LLM that you have access to (in OpenCode using <code class="docutils literal notranslate"><span class="pre">/connect</span></code>, in Mistral Vibe with <code class="docutils literal notranslate"><span class="pre">vibe</span> <span class="pre">--setup</span></code> and in Claude Code using <code class="docutils literal notranslate"><span class="pre">/login</span></code>).</p></li>
+</ul>
+</div>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-T3BlbkNvZGU=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-T3BlbkNvZGU=" name="T3BlbkNvZGU=" role="tab" tabindex="0">OpenCode</button><button aria-controls="panel-0-TWlzdHJhbCBWaWJl" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-TWlzdHJhbCBWaWJl" name="TWlzdHJhbCBWaWJl" role="tab" tabindex="-1">Mistral Vibe</button><button aria-controls="panel-0-Q2xhdWRlIENvZGU=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-Q2xhdWRlIENvZGU=" name="Q2xhdWRlIENvZGU=" role="tab" tabindex="-1">Claude Code</button></div><div aria-labelledby="tab-0-T3BlbkNvZGU=" class="sphinx-tabs-panel group-tab" id="panel-0-T3BlbkNvZGU=" name="T3BlbkNvZGU=" role="tabpanel" tabindex="0"><p><a class="reference external" href="https://opencode.ai/docs/mcp-servers/#local">Local MCP servers</a> are configured by editing the
+global configuration <code class="docutils literal notranslate"><span class="pre">~/.config/opencode/opencode.jsonc</span></code>:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For a local configuration use a directory <code class="docutils literal notranslate"><span class="pre">.opencode</span></code> in your current path instead of <code class="docutils literal notranslate"><span class="pre">~/.config/opencode</span></code></p>
+</div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opencode.ai/config.json&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="c1">// Other settings ...</span>
+<span class="w">  </span><span class="nt">&quot;mcp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;scb_opendata_mcp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvx&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;scb_opendata_mcp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--transport&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;stdio&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;swemo-mcp&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;local&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;command&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;uvx&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--with&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mcp==1.6.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;swemo-mcp&quot;</span><span class="p">],</span>
+<span class="w">      </span><span class="nt">&quot;enabled&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>and <a class="reference external" href="https://opencode.ai/docs/skills/">skills</a> can be added by running the commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.config/opencode/skills
+
+<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ashwinvis/scb-opendata-skills
+<span class="gp">$ </span>cp<span class="w"> </span>-r<span class="w"> </span>scb-opendata-skills/skills/*<span class="w">  </span>~/.config/opencode/skills/<span class="w">  </span><span class="c1"># Global configuration</span>
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-TWlzdHJhbCBWaWJl" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-TWlzdHJhbCBWaWJl" name="TWlzdHJhbCBWaWJl" role="tabpanel" tabindex="0"><p><a class="reference external" href="https://docs.mistral.ai/mistral-vibe/introduction/configuration#mcp-server-configuration">Local MCP servers</a>
+are configured by editing the global configuration <code class="docutils literal notranslate"><span class="pre">~/.vibe/config.toml</span></code>:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>For a custom agent configuration use a file say <code class="docutils literal notranslate"><span class="pre">~/.vibe/agents/mimer.toml</span></code> instead of the above, and later open with</p>
+<div class="highlight-sh notranslate"><div class="highlight"><pre><span></span>vibe<span class="w"> </span>--agent<span class="w"> </span>mimer
+</pre></div>
+</div>
+</div>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[[mcp_servers]]</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;scb_opendata_mcp&quot;</span>
+<span class="n">transport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;stdio&quot;</span>
+<span class="n">commmand</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;uvx&quot;</span>
+<span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;scb_opendata_mcp&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;--transport&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;stdio&quot;</span><span class="p">]</span><span class="err">,</span>
+<span class="w">      </span>
+<span class="k">[[mcp_servers]]</span>
+<span class="n">name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;swemo-mcp&quot;</span>
+<span class="n">transport</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;stdio&quot;</span>
+<span class="n">command</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;uvx&quot;</span><span class="w"> </span>
+<span class="n">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;--with&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;mcp==1.6.0&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;swemo-mcp&quot;</span><span class="p">]</span><span class="err">,</span>
+</pre></div>
+</div>
+<p>and <a class="reference external" href="https://docs.mistral.ai/mistral-vibe/agents-skills">skills</a> can be added by running the commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.vibe/skills
+
+<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ashwinvis/scb-opendata-skills
+<span class="gp">$ </span>cp<span class="w"> </span>-r<span class="w"> </span>scb-opendata-skills/skills/*<span class="w">  </span>~/.vibe/skills/<span class="w">  </span><span class="c1"># Global configuration</span>
+</pre></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you are using a custom agent configuration say <code class="docutils literal notranslate"><span class="pre">~/.vibe/agents/mimer.toml</span></code>, instead of copying with <code class="docutils literal notranslate"><span class="pre">cp</span> <span class="pre">-r</span></code>, you can also let skills be discovered:</p>
+<div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="n">skill_paths</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;/path/to/cloned/repo/scb-opendata-skills/skills/&quot;</span><span class="p">]</span>
+<span class="n">enabled_skills</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;scb-*&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div><div aria-labelledby="tab-0-Q2xhdWRlIENvZGU=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-Q2xhdWRlIENvZGU=" name="Q2xhdWRlIENvZGU=" role="tabpanel" tabindex="0"><p><a class="reference external" href="https://code.claude.com/docs/en/mcp#option-3-add-a-local-stdio-server">Local MCP servers</a> are configured by executing:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>claude<span class="w"> </span>mcp<span class="w"> </span>add<span class="w"> </span>--scope<span class="w"> </span>user<span class="w"> </span>--transport<span class="w"> </span>stdio<span class="w"> </span>scb_opendata_mcp<span class="w"> </span>--<span class="w"> </span>uvx<span class="w"> </span>scb_opendata_mcp<span class="w"> </span>--transport<span class="w"> </span>stdio
+<span class="gp">$ </span>claude<span class="w"> </span>mcp<span class="w"> </span>add<span class="w"> </span>--scope<span class="w"> </span>user<span class="w"> </span>--transport<span class="w"> </span>stdio<span class="w"> </span>swemo-mcp<span class="w"> </span>--<span class="w"> </span>uvx<span class="w"> </span>--with<span class="w"> </span><span class="nv">mcp</span><span class="o">==</span><span class="m">1</span>.6.0<span class="w"> </span>swemo-mcp
+</pre></div>
+</div>
+<p>and <a class="reference external" href="https://code.claude.com/docs/en/skills">skills</a> can be added by running the commands:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp">$ </span>mkdir<span class="w"> </span>-p<span class="w"> </span>~/.claude/skills
+
+<span class="gp">$ </span>git<span class="w"> </span>clone<span class="w"> </span>https://github.com/ashwinvis/scb-opendata-skills
+<span class="gp">$ </span>cp<span class="w"> </span>-r<span class="w"> </span>scb-opendata-skills/skills/*<span class="w"> </span>~/.claude/skills/<span class="w">  </span><span class="c1"># Global configuration</span>
+</pre></div>
+</div>
+</div></div>
+</section>
+<span id="document-2026-03-stockholm-ai/intro"></span><section id="introduction">
+<h4>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">¶</a></h4>
+<div class="admonition-questions questions admonition" id="questions-0">
+<p class="admonition-title">Questions</p>
+<ul class="simple">
+<li><p>What are LLMs and how do they work?</p></li>
+<li><p>What is agentic AI and how does it differ from traditional AI?</p></li>
+<li><p>How do you manage context and use MCPs in agentic systems?</p></li>
+<li><p>What are the differences between RAG and fine-tuning?</p></li>
+</ul>
+</div>
+<section id="large-language-models-llms">
+<h5>Large Language Models (LLMs)<a class="headerlink" href="#large-language-models-llms" title="Link to this heading">¶</a></h5>
+<p>Large Language Models (LLMs) are AI systems trained on vast amounts of text data to understand and generate human-like language. They excel at tasks like text completion, translation, summarization, and question-answering. LLMs leverage deep learning techniques, particularly transformer architectures, to process and generate coherent and contextually relevant text.</p>
+<p>In this hackathon, we will be focusing on the question-answering, code generation and tool-calling capabilities of LLMs.</p>
+</section>
+<section id="agentic-ai">
+<h5>Agentic AI<a class="headerlink" href="#agentic-ai" title="Link to this heading">¶</a></h5>
+<p>Agentic AI refers to systems that can autonomously perform tasks, make decisions, and interact with their environment to achieve specific goals.</p>
+<p>One way of designing an “agentic workflow” would be to repurpose coding agent harnesses. Coding agents are conversational AI models with access to tools such as reading/writing files, web search, and invoking shell commands. They live either in the IDE or in standalone command-line or GUI tools. This means they can be made highly autonomous through tool-calling or MCPs, enabling a wide variety of use cases.</p>
+<p><a class="reference internal" href="https://coderefinery.github.io/coding-with-ai/_images/agentic.png"><img alt="" class="align-center" src="https://coderefinery.github.io/coding-with-ai/_images/agentic.png" style="width: 75%;" /></a></p>
+<blockquote>
+<div><p>Example of using agentic AI for coding.
+Source: <a class="reference external" href="https://coderefinery.github.io/coding-with-ai/scenario-agentic/">CodeRefinery lesson on Responsible Use of Generative AI in Assisted Coding</a></p>
+</div></blockquote>
+<p><strong>With great power comes great responsibility</strong>. Oversee each step of your agentic development and try to manually allow when tools are suggested by the agent harness to execute.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://stackoverflow.blog/2025/04/17/wait-what-is-agentic-ai/">Wait, what is agentic AI? - Stack Overflow</a></p></li>
+<li><p><a class="reference external" href="https://aaif.io/">Agentic AI Foundation (AAIF)</a>, a Linux Foundation project</p></li>
+</ul>
+</div>
+</section>
+<section id="context-and-domain-knowledge">
+<h5>Context and domain knowledge<a class="headerlink" href="#context-and-domain-knowledge" title="Link to this heading">¶</a></h5>
+<p>Managing context is one way to add domain knowledge. It involves adding relevant information to ensure coherent and meaningful interactions.</p>
+<section id="mcp">
+<h6>MCP<a class="headerlink" href="#mcp" title="Link to this heading">¶</a></h6>
+<p>MCPs (Model Context Protocol) is an open-source standard for connecting AI applications to external systems. It enables AI applications to access data sources, tools, and workflows, enhancing their capabilities and allowing them to perform tasks more effectively. It can be though of as a <strong>opinionated REST API</strong> for AI applications.</p>
+<p><img alt="schematic of MCP" src="_images/mcp.png" /></p>
+<blockquote>
+<div><p>Schematic of an MCP server. Source: <a class="reference external" href="https://modelcontextprotocol.io/docs/getting-started/intro">What is the Model Context Protocol (MCP)? - Model Context Protocol</a></p>
+</div></blockquote>
+<p>Today, we will only use MCP servers as <em>read-only</em> or <em>query</em> tools to replace the need for a RAG system. However there are other <a class="reference external" href="https://modelcontextprotocol.io/docs/learn/architecture#primitives">MCP primitives</a> with which one can prepare reusable and few shot prompts templates and do so <a class="reference external" href="https://modelcontextprotocol.io/extensions/apps/overview">much</a> <a class="reference external" href="https://modelcontextprotocol.io/extensions/auth/overview">more</a>.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://registry.modelcontextprotocol.io/">Official MCP Registry</a></p>
+</div>
+<section id="other-approaches-with-rag-and-fine-tuning">
+<h6 aria-level="7">Other approaches with RAG and Fine-Tuning<a class="headerlink" href="#other-approaches-with-rag-and-fine-tuning" title="Link to this heading">¶</a></h6>
+<p><img alt="schematic of RAG" src="_images/rag.png" /></p>
+<blockquote>
+<div><p>Schematic of RAG. Source: <a class="reference external" href="https://gitlab.tuwien.ac.at/vsc-public/training/LLMs-on-supercomputers/">LLMs on Supercomputers, AI Factory Austria</a></p>
+</div></blockquote>
+<p>Retrieval-Augmented Generation (RAG) combines the strengths of retrieval-based and generative models, allowing systems to fetch relevant information from a knowledge base and generate responses based on that data. A RAG system can be thought of as an LLM model interacting with a <strong>fuzzy search engine</strong> in the “embedding space”.</p>
+<p>In comparison, MCP offers an alternative approach to RAG to carefully pass the context to the LLM, adding ability to add guardrails and validations.</p>
+<p><img alt="from prompt engineering, RAG, fine-tuning to training for scratch" src="_images/influence-llms.png" /></p>
+<blockquote>
+<div><p>How can you influence the output of LLMs?</p>
+</div></blockquote>
+<p>Fine-tuning, on the other hand, involves training a pre-trained model on a specific dataset to adapt it to a particular task or domain. While RAG is flexible and can handle dynamic information, fine-tuning provides more specialized and optimized performance for specific tasks. Based on your needs, the choice between RAG / MCP and fine-tuning depends on the nature of your data, the specific requirements of your application and the compute available.</p>
+</section>
+</section>
+<section id="skills">
+<h6>Skills<a class="headerlink" href="#skills" title="Link to this heading">¶</a></h6>
+<p>Skills are a lightweight, open format for extending AI agent capabilities with specialized knowledge and workflows. They allow agents to load procedural knowledge and context on demand, enabling them to perform tasks more accurately and efficiently. Skills are defined in a <code class="docutils literal notranslate"><span class="pre">SKILL.md</span></code> file and can include instructions, scripts, and resources.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<ul class="simple">
+<li><p><a class="reference external" href="https://agentskills.io/what-are-skills">What are skills? - Agent Skills</a></p></li>
+<li><p><a class="reference external" href="https://simonwillison.net/tags/skills/">Simon Willison’s blog on skills</a></p></li>
+</ul>
+</div>
+</section>
+<section id="context-management">
+<h6>Context management<a class="headerlink" href="#context-management" title="Link to this heading">¶</a></h6>
+<p>If there is one thing you should remember, it would be to <strong>take care of your context window</strong>.</p>
+<p>A drawback of RAG and MCP is that you need a context window upwards of 32k tokens. This is due to the additional overhead of system prompts and tool description, which is hidden in plain sight. During the hackathon these commands within OpenCode (or equivalent) will turn out to be useful:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">/clear</span></code> - <strong>Clears the context window</strong>. The most basic control, coding agents support clearing the context window (starting a new conversation), which you should do for unrelated queries.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">/compact</span></code> - <strong>Compaction</strong>. To enable conversations of unbounded length, coding agents support context compaction: if the conversation history grows too long, they will automatically call an LLM to summarize the prefix of the conversation, and replace the conversation history with the summary. Some agents give control to the user to invoke compaction when desired.</p></li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><a class="reference external" href="https://missing.csail.mit.edu/2026/agentic-coding/">Agentic Coding · Missing Semester</a></p>
+</div>
+</section>
+</section>
+<section id="summary">
+<h5>Summary<a class="headerlink" href="#summary" title="Link to this heading">¶</a></h5>
+<p>This hackathon aims to inspire you on how to use agentic AI for your own internal data and get reasonably correct answers. We showcase the capabilities of:</p>
+<ul class="simple">
+<li><p>open-weight LLM models</p></li>
+<li><p>MCP</p></li>
+<li><p>Skills</p></li>
+</ul>
+<p>to demonstrate the potential of sovereign AI. If you learned something new, that’s a bonus! Our goal is to empower you with the knowledge and tools to leverage agentic AI effectively.</p>
+<div class="admonition-keypoints keypoints admonition" id="keypoints-0">
+<p class="admonition-title">Keypoints</p>
+<ul class="simple">
+<li><p>Your data, your rules: Use this as inspiration to make use of agentic AI to harness your internal data.</p></li>
+<li><p>Sovereign AI: Explore the potential of open-weight LLM models.</p></li>
+<li><p>Spreading the word: Expand your skills and knowledge in AI.</p></li>
+</ul>
+</div>
+</section>
+</section>
+<span id="document-2026-03-stockholm-ai/challenge-1"></span><section id="challenge-1-regional-emission-intensity-analysis">
+<h4>Challenge 1: Regional Emission Intensity Analysis<a class="headerlink" href="#challenge-1-regional-emission-intensity-analysis" title="Link to this heading">¶</a></h4>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<p>You have access to the Statistics Sweden (SCB) data through the MCP server. You can query environmental and economic data using the scb_* tools. The goal is to analyze and compare emission intensity across Swedish regions.</p>
+</div>
+<section id="use-case">
+<h5>Use case<a class="headerlink" href="#use-case" title="Link to this heading">¶</a></h5>
+<div class="admonition-challenge exercise important admonition" id="exercise-0">
+<p class="admonition-title">Challenge</p>
+<p>Calculate and compare the gross emission intensity (tonnes of CO2 equivalents per million SEK of economic output) for at least 3 Swedish regions (e.g., Stockholm, Gotland, Norrbotten) for the years 2019-2021.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Example workflow</strong></p>
+<ul class="simple">
+<li><p>Start by searching for tables showing emission data and econonic profile by region.</p></li>
+<li><p>Compute emission intensity using the formula: <code class="docutils literal notranslate"><span class="pre">Intensity</span> <span class="pre">=</span> <span class="pre">Emissions</span> <span class="pre">(tonnes)</span> <span class="pre">/</span> <span class="pre">GRDP</span> <span class="pre">(million</span> <span class="pre">SEK)</span> <span class="pre">*</span> <span class="pre">1000</span></code> for the years 2019-2021.</p></li>
+</ul>
+<p><strong>Ground truth</strong>: <a class="reference external" href="https://www.scb.se/en/finding-statistics/statistics-by-subject-area/environment/environmental-accounts-and-sustainable-development/system-of-environmental-and-economic-accounts/pong/statistical-news/environmental-accounts--emissions-to-air-regional-statistics-2021/">SCB report: Regional greenhouse gas emissions are increasing</a></p>
+<p><img alt="Bar chart by region and year showing emission intensity" src="_images/challenge-1-chart.png" /></p>
+</div>
+<p>The required tables can be easily retrieved using the search function in the MCP server. However just in case if you get stuck,
+here is a hint:</p>
+<div class="dropdown admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The following tables to use</p>
+<ol class="arabic simple">
+<li><p>Emissions data: Retrieve air emissions by region and substance (GHG in tonnes CO2 equivalents) from table TAB4357</p></li>
+<li><p>Economic data: Retrieve Gross Regional Domestic Product (GRDP) by region from table TAB3138</p></li>
+</ol>
+</div>
+</section>
+<section id="futher-improvements">
+<h5>Futher improvements<a class="headerlink" href="#futher-improvements" title="Link to this heading">¶</a></h5>
+<div class="admonition-optional-challenges exercise important admonition" id="exercise-1">
+<p class="admonition-title">Optional Challenges</p>
+<ol class="arabic simple">
+<li><p><strong>Interactive Visualization</strong>: Create an interactive plot showing emission intensity trends over time for multiple regions.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>Instruct which library to use:</p>
+<ul>
+<li><p>Generate a Python app which uses libraries like <a class="reference external" href="https://plotly.com/python/">Plotly</a>, <a class="reference external" href="https://matplotlib.org/">Matplotlib</a>, <a class="reference external" href="https://gradio.app/">Gradio</a>, <a class="reference external" href="https://streamlit.io/">Streamlit</a>, <a class="reference external" href="https://holoviz.org/">Holoviz</a>, <a class="reference external" href="https://altair-viz.github.io/">Altair</a>, <a class="reference external" href="https://seaborn.pydata.org/">Seaborn</a>, or <a class="reference external" href="https://bokeh.org/">Bokeh</a></p></li>
+<li><p>Use Javascript (either front-end only or full-stack) app which uses <a class="reference external" href="https://d3js.org/">D3.js</a>, <a class="reference external" href="https://www.chartjs.org/">Chart.js</a>, <a class="reference external" href="https://vega.github.io/vega-lite/">Vega-Lite</a>, <a class="reference external" href="https://observablehq.com/plot/">Observable Plot</a>, or <a class="reference external" href="https://picocss.com/">Pico.css</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Extended Analysis</strong>: Extend the analysis to include more years (e.g., 2015-2023) or more regions to identify longer-term trends and regional patterns.</p></li>
+<li><p><strong>Map Visualization</strong>: Create a map visualization to show the distribution of emissions across different regions.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li><p>Instruct which library to use:</p>
+<ul class="simple">
+<li><p>Generate a Python library like <a class="reference external" href="https://ipyleaflet.readthedocs.io/">ipyleaflet</a> or <a class="reference external" href="https://python-visualization.github.io/folium/">Folium</a></p></li>
+<li><p>Generate Javascript app which uses <a class="reference external" href="https://leafletjs.com/">leaflet.js</a></p></li>
+</ul>
+<p>For data handling, SCB returns JSON-stat responses which can be processed using:</p>
+<ul class="simple">
+<li><p>Python: <a class="reference external" href="https://pypi.org/project/pyjstat/">pyjstat</a></p></li>
+<li><p>JavaScript: <a class="reference external" href="https://www.npmjs.com/package/jsonstat-toolkit">jsonstat-toolkit</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<span id="document-2026-03-stockholm-ai/challenge-2"></span><section id="challenge-2-inflation-measures-analysis">
+<h4>Challenge 2: Inflation Measures Analysis<a class="headerlink" href="#challenge-2-inflation-measures-analysis" title="Link to this heading">¶</a></h4>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<p>You have access to the</p>
+<ul class="simple">
+<li><p>Statistics Sweden (SCB) data through the <code class="docutils literal notranslate"><span class="pre">scb-opendata-mcp</span></code> server. You can query economic data using the scb_* tools.</p></li>
+<li><p>Rikskbanken data through the <code class="docutils literal notranslate"><span class="pre">swemo-mcp</span></code> for CPI, CPIF, GDP, and other economic indicators.</p></li>
+</ul>
+<p>The goal is to analyze and compare different inflation measures in Sweden.</p>
+</div>
+<section id="use-case">
+<h5>Use case<a class="headerlink" href="#use-case" title="Link to this heading">¶</a></h5>
+<div class="admonition-challenge exercise important admonition" id="exercise-0">
+<p class="admonition-title">Challenge</p>
+<p>Retrieve and compare the following inflation measures for Sweden for the years 2020-2025:</p>
+<ul class="simple">
+<li><p>CPI (Consumer Price Index)</p></li>
+<li><p>CPIF (Consumer Price Index with fixed interest rate)</p></li>
+<li><p>CPIF-XE (CPIF excluding energy products)</p></li>
+<li><p>HICP (Harmonized Index of Consumer Prices)</p></li>
+</ul>
+<p>Calculate the annual inflation rate for each measure and visualize the trends.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Example workflow</strong></p>
+<ul class="simple">
+<li><p>Start by searching for tables showing the different inflation measures.</p></li>
+<li><p>Retrieve the monthly or annual data for the specified measures. Aggregate them if needed.</p></li>
+</ul>
+<p><strong>Ground truth</strong>: <a class="reference external" href="https://www.scb.se/en/finding-statistics/statistics-by-subject-area/prices-and-economic-trends/price-statistics/consumer-price-index-cpi/pong/statistical-news/consumer-price-index-cpi-february-2026/">SCB report: Different measures of inflation</a></p>
+<p><img alt="Line chart showing different inflation measures over time" src="_images/challenge-2-chart.png" /></p>
+</div>
+</section>
+<section id="further-improvements">
+<h5>Further improvements<a class="headerlink" href="#further-improvements" title="Link to this heading">¶</a></h5>
+<div class="admonition-optional-challenges exercise important admonition" id="exercise-1">
+<p class="admonition-title">Optional Challenges</p>
+<ol class="arabic simple">
+<li><p><strong>Interactive Visualization</strong>: Create an interactive plot showing the trends of different inflation measures over time.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li><p>Instruct which library to use:</p>
+<ul class="simple">
+<li><p>Generate a Python app which uses libraries like <a class="reference external" href="https://plotly.com/python/">Plotly</a>, <a class="reference external" href="https://matplotlib.org/">Matplotlib</a>, <a class="reference external" href="https://gradio.app/">Gradio</a>, <a class="reference external" href="https://streamlit.io/">Streamlit</a>, <a class="reference external" href="https://holoviz.org/">Holoviz</a>, <a class="reference external" href="https://altair-viz.github.io/">Altair</a>, <a class="reference external" href="https://seaborn.pydata.org/">Seaborn</a>, or <a class="reference external" href="https://bokeh.org/">Bokeh</a></p></li>
+<li><p>Use Javascript (either front-end only or full-stack) app which uses <a class="reference external" href="https://d3js.org/">D3.js</a>, <a class="reference external" href="https://www.chartjs.org/">Chart.js</a>, <a class="reference external" href="https://vega.github.io/vega-lite/">Vega-Lite</a>, <a class="reference external" href="https://observablehq.com/plot/">Observable Plot</a>, or <a class="reference external" href="https://picocss.com/">Pico.css</a></p></li>
+</ul>
+<p>For data handling, SCB returns JSON-stat responses which can be processed using:</p>
+<ul class="simple">
+<li><p>Python: <a class="reference external" href="https://pypi.org/project/pyjstat/">pyjstat</a></p></li>
+<li><p>JavaScript: <a class="reference external" href="https://www.npmjs.com/package/jsonstat-toolkit">jsonstat-toolkit</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Extended Analysis</strong>: Extend the analysis to include more years (e.g., 2010-2025) to identify longer-term trends.</p></li>
+<li><p><strong>Correlation Analysis</strong>: Analyze the correlation between different inflation measures and the GDP (Gross Domestic Product).</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>Instruct which library to use:</p>
+<ul>
+<li><p>Generate a Python app which uses libraries like Pandas, NumPy, Scipy, Seaborn etc.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+</section>
+</section>
+<span id="document-2026-03-stockholm-ai/challenge-3"></span><section id="challenge-3-electricity-production-and-use-analysis">
+<h4>Challenge 3: Electricity Production and Use Analysis<a class="headerlink" href="#challenge-3-electricity-production-and-use-analysis" title="Link to this heading">¶</a></h4>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<p>You have access to the Statistics Sweden (SCB) data through the MCP server. You can query energy data using the scb_* tools. The goal is to analyze and compare electricity production and use in Sweden.</p>
+</div>
+<section id="use-case">
+<h5>Use case<a class="headerlink" href="#use-case" title="Link to this heading">¶</a></h5>
+<div class="admonition-challenge exercise important admonition" id="exercise-0">
+<p class="admonition-title">Challenge</p>
+<p>Retrieve and analyze the electricity supply and use data for Sweden for the years 2010-2024. Focus on the following aspects:</p>
+<ul class="simple">
+<li><p>Total production by energy source (Hydro power, Wind power, Solar, Nuclear power, etc.)</p></li>
+<li><p>Production and use (including exports).</p></li>
+<li><p>Total use by sector (Manufacturing industries, Services, Agriculture, Households, Exports)</p></li>
+</ul>
+<p>Calculate the percentage contribution of each energy source to the total production and visualize the trends.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Example workflow</strong></p>
+<ul class="simple">
+<li><p>Start by searching for tables showing electricity supply and use data.</p></li>
+</ul>
+<p><strong>Ground truth</strong>: <a class="reference external" href="https://www.scb.se/en/finding-statistics/statistics-by-subject-area/energy/energy-supply-and-use/annual-energy-statistics-electricity-gas-and-district-heating/pong/tables-and-graphs/electricity-supply-and-use-20012024-gwh/">SCB report: Electricity supply and use 2001–2024 (GWh)</a></p>
+</div>
+<p>The required tables can be easily retrieved using the search function in the MCP server. However, just in case you get stuck,
+here is a hint:</p>
+<div class="dropdown admonition hint">
+<p class="admonition-title">Hint</p>
+<p>The following tables to use:</p>
+<ol class="arabic simple">
+<li><p>Electricity supply use data: Retrieve from table TAB1010</p></li>
+<li><p>Electricity use data: Retrieve from table TAB991</p></li>
+</ol>
+</div>
+</section>
+<section id="further-improvements">
+<h5>Further improvements<a class="headerlink" href="#further-improvements" title="Link to this heading">¶</a></h5>
+<div class="admonition-optional-challenges exercise important admonition" id="exercise-1">
+<p class="admonition-title">Optional Challenges</p>
+<ol class="arabic simple">
+<li><p><strong>Interactive Visualization</strong>: Create an interactive plot showing the trends of electricity production and use over time.</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul>
+<li><p>Instruct which library to use:</p>
+<ul class="simple">
+<li><p>Generate a Python app which uses libraries like <a class="reference external" href="https://plotly.com/python/">Plotly</a>, <a class="reference external" href="https://matplotlib.org/">Matplotlib</a>, <a class="reference external" href="https://gradio.app/">Gradio</a>, <a class="reference external" href="https://streamlit.io/">Streamlit</a>, <a class="reference external" href="https://holoviz.org/">Holoviz</a>, <a class="reference external" href="https://altair-viz.github.io/">Altair</a>, <a class="reference external" href="https://seaborn.pydata.org/">Seaborn</a>, or <a class="reference external" href="https://bokeh.org/">Bokeh</a></p></li>
+<li><p>Use Javascript (either front-end only or full-stack) app which uses <a class="reference external" href="https://d3js.org/">D3.js</a>, <a class="reference external" href="https://www.chartjs.org/">Chart.js</a>, <a class="reference external" href="https://vega.github.io/vega-lite/">Vega-Lite</a>, <a class="reference external" href="https://observablehq.com/plot/">Observable Plot</a>, or <a class="reference external" href="https://picocss.com/">Pico.css</a></p></li>
+</ul>
+<p>For data handling, SCB returns JSON-stat responses which can be processed using:</p>
+<ul class="simple">
+<li><p>Python: <a class="reference external" href="https://pypi.org/project/pyjstat/">pyjstat</a></p></li>
+<li><p>JavaScript: <a class="reference external" href="https://www.npmjs.com/package/jsonstat-toolkit">jsonstat-toolkit</a></p></li>
+</ul>
+</li>
+</ul>
+</div>
+<ol class="arabic simple" start="2">
+<li><p><strong>Renewable Energy Analysis</strong>: Analyze the contribution of renewable energy sources (Hydro power, Wind power, Solar) to the total production.</p></li>
+<li><p><strong>Price correlation</strong>: Compare against data for <strong>Electricity grid prices</strong> and <strong>electricity prices for households and non-households</strong>. What is driving this trend? Productions vs use or exports?</p></li>
+</ol>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use multiple charts to make a mini investigation. You can choose to compile it into a report or a slidedeck.
+You can use tools like Pandoc to generate a PDF or Reveal.js to make a presentation.</p>
+</div>
+</div>
+</section>
+</section>
+<span id="document-2026-03-stockholm-ai/epilogue"></span><section id="wrap-up">
+<h4>Wrap up<a class="headerlink" href="#wrap-up" title="Link to this heading">¶</a></h4>
+<p>We start at <s>20:00:</s> <strong>19:55 (NEW TIME!)</strong> with the wrap up and demos.</p>
+<div class="admonition-objectives objectives admonition" id="objectives-0">
+<p class="admonition-title">Objectives</p>
+<ul class="simple">
+<li><p>Each team presents for <strong>5 minutes</strong> sharing their hack.</p></li>
+</ul>
+</div>
+<div class="admonition-questions questions admonition" id="questions-0">
+<p class="admonition-title">Questions</p>
+<p>Some suggested questions to present:</p>
+<ul class="simple">
+<li><p>Did you find something interesting or unexpected from the data through your hacks?</p></li>
+<li><p>Are there any thoughts on your experience with this workflow?</p></li>
+</ul>
+</div>
+</section>
+<section id="feedback">
+<h4>Feedback<a class="headerlink" href="#feedback" title="Link to this heading">¶</a></h4>
+<p><img alt="" src="_images/feedback-qr.png" /></p>
+<p>Scan the QR code above <strong>or</strong> answer below in our feedback survey. Your input is valuable, so please take your time to add your comments.</p>
+<iframe src="https://nextcloud.naiss.se/apps/forms/embed/yTbF8DbbFNM7sCCXCgMTSGNp" width="100%" height="900">
+</iframe>
+<p>Link to the form: <a class="reference external" href="https://nextcloud.naiss.se/apps/forms/embed/yTbF8DbbFNM7sCCXCgMTSGNp">https://nextcloud.naiss.se/apps/forms/embed/yTbF8DbbFNM7sCCXCgMTSGNp</a></p>
+</section>
+</div>
+</section>
+</section>
+</div>
+<div class="toctree-wrapper compound">
+<span id="document-quick-reference"></span><section id="quick-reference">
+<h2>Quick Reference<a class="headerlink" href="#quick-reference" title="Link to this heading">¶</a></h2>
+<section id="python-and-use-of-virtual-environments">
+<span id="python-venv"></span><h3>Python and use of virtual environments<a class="headerlink" href="#python-and-use-of-virtual-environments" title="Link to this heading">¶</a></h3>
+<p>During the course of the hackathons you might need Python tools or develop your own application.
+For security reasons and to leave your system libraries unaffected, we always recommend you develop your
+demo apps inside a Python virtual environment,
+as it often wants to install libraries and execute code. Given below are some pointers on how to do that.</p>
+<div class="sphinx-tabs docutils container">
+<div aria-label="Tabbed content" class="closeable" role="tablist"><button aria-controls="panel-0-dXY=" aria-selected="true" class="sphinx-tabs-tab group-tab" id="tab-0-dXY=" name="dXY=" role="tab" tabindex="0">uv</button><button aria-controls="panel-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXaW5kb3dz" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXaW5kb3dz" name="UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXaW5kb3dz" role="tab" tabindex="-1">Python’s <code class="docutils literal notranslate"><span class="pre">venv</span></code> module in Windows</button><button aria-controls="panel-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXU0wvTGludXgvbWFjT1M=" aria-selected="false" class="sphinx-tabs-tab group-tab" id="tab-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXU0wvTGludXgvbWFjT1M=" name="UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXU0wvTGludXgvbWFjT1M=" role="tab" tabindex="-1">Python’s <code class="docutils literal notranslate"><span class="pre">venv</span></code> module in WSL/Linux/macOS</button></div><div aria-labelledby="tab-0-dXY=" class="sphinx-tabs-panel group-tab" id="panel-0-dXY=" name="dXY=" role="tabpanel" tabindex="0"><p>The following commands show how to initialize a virtual environment named <code class="docutils literal notranslate"><span class="pre">.venv</span></code>,
+install packages to it and run executables from it.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>uv<span class="w"> </span>init
+uv<span class="w"> </span>add<span class="w"> </span>&lt;package&gt;
+uv<span class="w"> </span>run<span class="w"> </span>&lt;executable&gt;
+</pre></div>
+</div>
+</div><div aria-labelledby="tab-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXaW5kb3dz" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXaW5kb3dz" name="UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXaW5kb3dz" role="tabpanel" tabindex="0"><p>You might have a working Python installation and you do not wish to use <code class="docutils literal notranslate"><span class="pre">uv</span></code>. If so,</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>py<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+.venv<span class="se">\S</span>cripts<span class="se">\a</span>ctivate
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>&lt;package&gt;
+&lt;executable&gt;
+</pre></div>
+</div>
+<p>Use <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> to leave the environment.</p>
+</div><div aria-labelledby="tab-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXU0wvTGludXgvbWFjT1M=" class="sphinx-tabs-panel group-tab" hidden="true" id="panel-0-UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXU0wvTGludXgvbWFjT1M=" name="UHl0aG9uJ3MgYHZlbnZgIG1vZHVsZSBpbiBXU0wvTGludXgvbWFjT1M=" role="tabpanel" tabindex="0"><p>You might have a working Python installation and you do not wish to use <code class="docutils literal notranslate"><span class="pre">uv</span></code>. If so,</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3<span class="w"> </span>-m<span class="w"> </span>venv<span class="w"> </span>.venv
+<span class="nb">source</span><span class="w"> </span>.venv/bin/activate
+python<span class="w"> </span>-m<span class="w"> </span>pip<span class="w"> </span>install<span class="w"> </span>&lt;package&gt;
+&lt;executable&gt;
+</pre></div>
+</div>
+<p>Use <code class="docutils literal notranslate"><span class="pre">deactivate</span></code> to leave the environment.</p>
+</div></div>
+<p>The <code class="docutils literal notranslate"><span class="pre">&lt;executable&gt;</span></code> can be <code class="docutils literal notranslate"><span class="pre">python</span></code> or even something provided by a package such as <code class="docutils literal notranslate"><span class="pre">gradio</span></code>.</p>
+</section>
+<section id="python-scripts">
+<h3>Python scripts<a class="headerlink" href="#python-scripts" title="Link to this heading">¶</a></h3>
+<p>A new way (PEP 723) of developing scripts without having to ensure dependencies is
+to add inline-script metadata which looks like this:</p>
+<div class="highlight-py notranslate"><div class="highlight"><pre><span></span><span class="c1"># /// script</span>
+<span class="c1"># requires-python = &quot;&gt;=3.11&quot;</span>
+<span class="c1"># dependencies = [</span>
+<span class="c1">#   &quot;pandas&quot;,</span>
+<span class="c1">#   &quot;seaborn&quot;,</span>
+<span class="c1"># ]</span>
+<span class="c1"># ///</span>
+
+<span class="kn">import</span><span class="w"> </span><span class="nn">pandas</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">pd</span>
+<span class="kn">import</span><span class="w"> </span><span class="nn">seaborn</span><span class="w"> </span><span class="k">as</span><span class="w"> </span><span class="nn">sns</span>
+
+<span class="o">...</span>
+</pre></div>
+</div>
+<p>No virtual environments are needed for such scripts to work.
+This can be executed using <a class="reference external" href="https://docs.astral.sh/uv/guides/scripts/#creating-a-python-script"><code class="docutils literal notranslate"><span class="pre">uv</span> <span class="pre">run</span></code></a>
+command and <a class="reference external" href="https://pipx.pypa.io/"><code class="docutils literal notranslate"><span class="pre">pipx</span></code></a>.</p>
+</section>
+</section>
+<span id="document-guide"></span><section id="instructor-s-guide">
+<h2>Instructor’s guide<a class="headerlink" href="#instructor-s-guide" title="Link to this heading">¶</a></h2>
+<section id="why-we-teach-this-lesson">
+<h3>Why we teach this lesson<a class="headerlink" href="#why-we-teach-this-lesson" title="Link to this heading">¶</a></h3>
+</section>
+<section id="intended-learning-outcomes">
+<h3>Intended learning outcomes<a class="headerlink" href="#intended-learning-outcomes" title="Link to this heading">¶</a></h3>
+</section>
+<section id="timing">
+<h3>Timing<a class="headerlink" href="#timing" title="Link to this heading">¶</a></h3>
+</section>
+<section id="preparing-exercises">
+<h3>Preparing exercises<a class="headerlink" href="#preparing-exercises" title="Link to this heading">¶</a></h3>
+<p>e.g. what to do the day before to set up common repositories.</p>
+</section>
+<section id="other-practical-aspects">
+<h3>Other practical aspects<a class="headerlink" href="#other-practical-aspects" title="Link to this heading">¶</a></h3>
+</section>
+<section id="interesting-questions-you-might-get">
+<h3>Interesting questions you might get<a class="headerlink" href="#interesting-questions-you-might-get" title="Link to this heading">¶</a></h3>
+</section>
+<section id="typical-pitfalls">
+<h3>Typical pitfalls<a class="headerlink" href="#typical-pitfalls" title="Link to this heading">¶</a></h3>
+</section>
+</section>
+</div>
+<section id="see-also">
+<h2>See also<a class="headerlink" href="#see-also" title="Link to this heading">¶</a></h2>
+<div class="warning admonition">
+<p class="admonition-title">Credit</p>
+<p>FIXME</p>
+<p>Don’t forget to check out additional course materials from …</p>
+</div>
+<div class="attention admonition">
+<p class="admonition-title">License</p>
+<div class="attention dropdown admonition">
+<p class="admonition-title">CC BY-SA for media and pedagogical material</p>
+<p>Copyright © 2026 Mimer AI Factory. This material is released by Mimer AI Factory under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0).</p>
+<p><strong>Canonical URL</strong>: <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/">https://creativecommons.org/licenses/by-sa/4.0/</a></p>
+<p><a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/legalcode.en">See the legal code</a></p>
+<p class="rubric" id="you-are-free-to">You are free to</p>
+<ol class="arabic simple">
+<li><p><strong>Share</strong> — copy and redistribute the material in any medium or format for any purpose, even commercially.</p></li>
+<li><p><strong>Adapt</strong> — remix, transform, and build upon the material for any purpose, even commercially.</p></li>
+<li><p>The licensor cannot revoke these freedoms as long as you follow the license terms.</p></li>
+</ol>
+<p class="rubric" id="under-the-following-terms">Under the following terms</p>
+<ol class="arabic simple">
+<li><p><strong>Attribution</strong> — You must give <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/#ref-appropriate-credit">appropriate credit</a> , provide a link to the license, and <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/#ref-indicate-changes">indicate if changes were made</a> . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.</p></li>
+<li><p><strong>ShareAlike</strong> — If you remix, transform, or build upon the material, you must distribute your contributions under the <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/#ref-same-license">same license</a> as the original.</p></li>
+<li><p><strong>No additional restrictions</strong> — You may not apply legal terms or <a class="reference external" href="https://creativecommons.org/licenses/by-sa/4.0/#ref-technological-measures">technological measures</a> that legally restrict others from doing anything the license permits.</p></li>
+</ol>
+<p class="rubric" id="notices">Notices</p>
+<p>You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.en#ref-exception-or-limitation">exception or limitation</a> .</p>
+<p>No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as <a class="reference external" href="https://creativecommons.org/licenses/by/4.0/deed.en#ref-publicity-privacy-or-moral-rights">publicity, privacy, or moral rights</a> may limit how you use the material.</p>
+<p>This deed highlights only some of the key features and terms of the actual license. It is not a license and has no legal value. You should carefully review all of the terms and conditions of the actual license before using the licensed material.</p>
+</div>
+<div class="attention dropdown admonition">
+<p class="admonition-title">MIT for source code and code snippets</p>
+<p>MIT License</p>
+<p>Copyright (c) 2026, Mimer AI Factory project, The contributors</p>
+<p>Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the “Software”), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:</p>
+<p>The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</p>
+<p>THE SOFTWARE IS PROVIDED “AS IS”, WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</p>
+</div>
+</div>
+</section>
+</section>
+
+        </article>
+      </div>
+      <footer>
+        
+        <div class="related-pages">
+          
+          
+        </div>
+        <div class="bottom-of-page">
+          <div class="left-details">
+            <div class="copyright">
+                Copyright &#169; 2026, Mimer AI Factory, The contributors
+            </div>
+            Made with <a href="https://www.sphinx-doc.org/">Sphinx</a> and <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
+            
+            <a href="https://github.com/pradyunsg/furo">Furo</a>
+            
+          </div>
+          <div class="right-details">
+            <div class="icons">
+              <a class="muted-link " href="https://github.com/mimer-ai/hackathons" aria-label="GitHub">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
+                </svg>
+            </a>
+              
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+    <aside class="toc-drawer">
+      
+      
+      <div class="toc-sticky toc-scroll">
+        <div class="toc-title-container">
+          <span class="toc-title">
+            On this page
+          </span>
+        </div>
+        <div class="toc-tree-container">
+          <div class="toc-tree">
+            <p class="caption" role="heading"><span class="caption-text">List of hackathons</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-2026-03-stockholm-ai/index">25 March 2026: Agentic AI with Swedish public data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/index#schedule">Schedule</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#document-2026-03-stockholm-ai/index#instructions">Instructions</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Reference</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="#document-quick-reference">Quick Reference</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#document-guide">Instructor’s guide</a></li>
+</ul>
+
+          </div>
+        </div>
+      </div>
+      
+      
+    </aside>
+  </div>
+</div><script src="_static/documentation_options.js?v=d6d90d09"></script>
+    <script src="_static/doctools.js?v=9bcbadda"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/scripts/furo.js?v=46bd48cc"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=35a8b989"></script>
+    <script src="_static/minipres.js?v=a0d29692"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/tabs.js?v=3030b3cb"></script>
+    <script data-domain="learn.mimer-ai.eu/hackathons" defer="defer" src="https://plausible.io/js/script.js"></script>
+    </body>
+</html>
